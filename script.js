@@ -212,6 +212,7 @@ video.addEventListener("loadeddata", async function(){
     video.addEventListener("playing", function(){
       showDur = 6.2 * 1000;
       setTimeout(() => {
+        video.style.opacity = 1;
         loadingOverlay.style.animation = "transition 1s linear forwards";
       }, showDur);
     });
